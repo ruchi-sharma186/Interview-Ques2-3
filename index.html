@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css day2 interviewques</title>
+    <style>
+        h3{
+            color: red;
+        } 
+        h1{
+            color: blue;
+            font-style: italic;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Interview question ..Day2</h1>
+   <h3>Q1.what is box sizing?</h3>
+   <p>The box-sizing property determines how the total width and height of an element are calculated. <br>
+
+    content-box (default): Width and height include only content; padding and border are added separately. <br>
+    
+    border-box: Width and height include content, padding, and border, preventing extra growth of the element.
+    </p>
+    <h3>Q2. What is animation-delay?</h3>
+
+       <p>The animation-delay property specifies the time to wait before starting an animation.</p> 
+        
+        Example:
+        
+        div {
+          animation: fadeIn 2s;
+          animation-delay: 1s; /* Starts after 1 second */
+        }
+        <H3>Q3. Which property is used to merge cells vertically in CSS Grid?</H3>
+
+            <p>Use grid-row to span multiple rows.</p>
+            
+            Example: <br>
+            
+            .item {
+              grid-row: span 2; /* Merges 2 rows */
+            }
+            
+<h3>Q4. Which property is used to merge cells horizontally in CSS Grid?</h3>
+
+   <p> Use grid-column to span multiple columns. </p>
+    
+    Example: <br>
+    
+    .item {
+      grid-column: span 3; /* Merges 3 columns */
+    }
+    
+
+<h3>Q5.Explain CSS Box Model </h3>  
+
+   <p> The CSS Box Model consists of: <br>
+    
+    Content: The actual text or image inside the element. <br>
+    
+    Padding: Space between content and border. <br>
+    
+    Border: The edge around the padding. <br>
+    
+    Margin: Space outside the border separating elements.
+      </p>
+       <br>
+       <br>
+      
+      <hr>
+    
+      <h1>Interview question..Day3</h1>
+      <h3>Q1. Difference Between relative and absolute Position   </h3>
+
+        <p>relative: Moves the element relative to its original position while keeping space occupied.</p>
+        
+        <p>absolute: Moves the element relative to its nearest positioned ancestor (or the viewport if none exists) and removes it from the normal flow.</p>
+          
+    <h3>Q2.Create a Pie Chart with Equal Percentage (CSS Only)</h3>
+      <style>
+        .pie-chart {
+          width: 100px;
+          height: 100px;
+          border-radius: 50%;
+          background: conic-gradient(
+            red 0% 25%, 
+            blue 25% 50%, 
+            green 50% 75%, 
+            yellow 75% 100%
+          );
+        }
+    </style>
+        <div class="pie-chart"></div>
+       <p>.pie-chart { <br>
+            width: 100px; <br>
+            height: 100px; <br>
+            border-radius: 50%; <br>
+            background: conic-gradient( <br>
+              red 0% 25%,  <br>
+              blue 25% 50%,  <br>
+              green 50% 75%,  <br>
+              yellow 75% 100% <br>
+            ); <br>
+          }  </p>
+        
+  <h3>Q3. Code for Opacity </h3>
+<style>
+    .opacity-example {
+        width: 200px;
+        height: 100px;
+        background-color: blue;
+        opacity: 0.5; /* 50% transparent */
+        text-align: center;
+        line-height: 100px;
+        color: white;
+        font-size:20px;
+      }
+      
+</style>
+<div class="opacity-example">50% Opacity</div>
+
+  <h3>Q4.Square Cards with Hover Effect</h3>
+<style>
+    .card {
+      width: 150px;
+      height: 150px;
+      background: lightblue;
+      text-align: center;
+      line-height: 150px;
+      transition: transform 0.3s;
+    }
+    
+    .card:hover {
+      transform: scale(1.1);
+    }
+    </style>
+    <div class="card">Hover Me</div>
+    </h3>  
+<h3>Q5.Example of 3D Cards Using CSS</h3>
+<style>
+    .card3D {
+      width: 200px;
+      height: 250px;
+      background: linear-gradient(45deg, #ff6b6b, #ffa502);
+      transform: rotateY(10deg);
+      transition: transform 0.5s;
+    }
+    
+    .card3D:hover {
+      transform: rotateY(60deg);
+    }
+</style>
+    <div class="card3D"></div>
+    
+ <h3>Q6.Rotate the Card at Z-Axis (40 Degrees)</h3>
+<style>
+    .rotate-card {
+        height: 150px;
+        width: 150px;
+background-color: aqua;
+margin: 50px;
+      transform: rotateZ(40deg);
+    }
+</style>
+    <div class="rotate-card">Rotated Card</div>
+       
+</body>
+</html>
